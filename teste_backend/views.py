@@ -5,7 +5,7 @@ from rest_framework.parsers import FileUploadParser
 from drf_spectacular.utils import extend_schema
 
 from .models import Campos
-from .serializers import CamposSerializers, CamposUploadSerializer, CamposListSerializer
+from .serializers import CamposSerializer, CamposUploadSerializer, CamposListSerializer
 
 
 @extend_schema(methods=['GET'], exclude=True)
@@ -22,7 +22,7 @@ class UploadView(APIView):
         dados = []
 
         for item in arquivo:
-            serializer = CamposSerializers(
+            serializer = CamposSerializer(
                 data={
                     "tipo": item[:1],
                     "data": item[1:9],

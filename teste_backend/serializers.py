@@ -2,7 +2,7 @@ from rest_framework import serializers
 from teste_backend.models import Campos
 
 
-class CamposSerializers(serializers.ModelSerializer):
+class CamposSerializer(serializers.ModelSerializer):
     class Meta:
         model = Campos
         fields = "__all__"
