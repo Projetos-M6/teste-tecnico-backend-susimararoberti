@@ -31,7 +31,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "https://cnab-susimara.herokuapp.com/", "localhost"]
+    "cnab-susimara.herokuapp.com", "localhost"]
 
 
 # Application definition
