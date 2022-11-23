@@ -38,11 +38,11 @@ API destinada a parsear arquivos txt para formato json, salvando em banco de dad
 - Basta rodar o comando `python manage.py runserver`
 - Para encerrar, rode `Ctrl+c`
 
-### 7 - Vizualizando a aplicação
+### 7 - Vizualizando a aplicação localmente
 
 - Para visualizar as rotas acesse a documentação em [http://localhost:8000/api/swagger-doc/](http://localhost:8000/api/swagger-doc/)
 
-### 8 - Testando/Utilizando a aplicação
+### 8 - Testando/Utilizando a aplicação localmente
 
 #### Método POST:
 
@@ -52,3 +52,9 @@ API destinada a parsear arquivos txt para formato json, salvando em banco de dad
 #### Método GET:
 
 - Utilize a rota `http://localhost:8000/api/relatorio/<NOME DA LOJA>/`
+
+### 9 - Usando o deploy
+
+- Utilize o endpoint `https://cnab-susimara.herokuapp.com/api/parser/cnab` para realizar o upload do arquivo txt CNAB;
+- Utilize o endpoint `https://cnab-susimara.herokuapp.com/api/relatorio/<NOME DA LOJA>/` para realizar a consulta das operações e saldo de uma loja específica;
+- Utilize o endpoint [https://cnab-susimara.herokuapp.com/api/swagger-doc/](https://cnab-susimara.herokuapp.com/api/swagger-doc/) para consultar a documentação da aplaicação;
