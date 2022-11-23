@@ -30,7 +30,8 @@ SECRET_KEY = "django-insecure-67%i)r#b&nvdl%2_#!cw*+5aioc&%&c#v&if=u=wmk_4_z9m1p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "https://cnab-susimara.herokuapp.com/", "localhost"]
 
 
 # Application definition
